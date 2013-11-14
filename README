@@ -1,0 +1,15 @@
+Convert BLS ascii CPI table to CSV format
+
+The data table is from ftp://ftp.bls.gov/pub/special.requests/cpi/cpiai.txt
+
+To update the table:
+
+    $ cd data/
+    $ mv cpiai.txt cpiai.txt.old
+    $ wget ftp://ftp.bls.gov/pub/special.requests/cpi/cpiai.txt
+
+To run the program:
+
+    $ python src/cpicsv.py data/cpiai.txt > out/cpiai.csv
+
+Then look at `out/cpiai.csv`.
